@@ -21,7 +21,7 @@ answer in the fewest number of guesses.
 
 You are given the gameplay code in `guessthenumber.cc`, you will provide the player code in `player.h` and
 `player.cc`. This code will implement the play strategies of human and player through the classes
-`Human` and `Computer` respectively. 
+`HumanPlayer` and `ComputerPlayer` respectively. 
 
 For example, you can use these object to play the game in `main.cc`:
 
@@ -46,18 +46,18 @@ int main() {
 
 ### Writing the code for this Project
 
-For each of the `Human` and `Computer` classes, you'll need to add `.h` and 
+For each of the `HumanPlayer` and `ComputerPlayer` classes, you'll need to add `.h` and 
 `.cc` files. 
 
-In these you will write the strategies for the `Human` and `Computer` classes. For the 
-`Human` player the strategy is to ask the user for a number and use that as a guess. The
-strategy for the `Computer` player is to use a binary search based on whether the last guess
+In these you will write the strategies for the `HumanPlayer` and `ComputerPlayer` classes. For the 
+`HumanPlayer` player the strategy is to ask the user for a number and use that as a guess. The
+strategy for the `ComputerPlayer` player is to use a binary search based on whether the last guess
 was too high or too low. The first guess, would then be right in the middle of the range. 
 
-For the `Human` class you will need to right the `guess` method. For the `Computer` class you
+For the `HumanPlayer` class you will need to right the `guess` method. For the `ComputerPlayer` class you
 will need to right the `tooLow` and `toHigh` methods and keep track of the last guess.
 
-The unit tester only includes `player.h`, to include the `Human` and `Computer` declarations
+The unit tester only includes `player.h`, to include the `HumanPlayer` and `ComputerPlayer` declarations
 those classes must either be defined in there, or included from there. Otherwise, the unit test
 code **will not compile**.
 
