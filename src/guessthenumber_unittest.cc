@@ -39,7 +39,8 @@
 #include <chrono>
 
 #include "player.h"
-
+#include "computerplayer.h"
+#include "humanplayer.h"
 #include "gtest/gtest.h"
 
 namespace {
